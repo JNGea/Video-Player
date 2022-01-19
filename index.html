@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Video Player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <video id="video" poster="./images/poster.jpg" src="https://res.cloudinary.com/dokzqpuap/video/upload/v1642606205/zaayxityhu1xmtoxmdv6.mp4" width="600"></video>
+            <div class="player-capa">
+                <h2 class="player-title">Música para Programar</h2>
+                <div class="player-actions">
+                    <button class="button" id="retroceder" aria-label="retroceder 10 segundos" title="retroceder 10 segundos"></button>
+                    <button class="button" id="play" aria-label="reproducir video" title="reproducir video"></button>
+                    <button class="button" hidden id="pausa" aria-label="pausar video" title="pausar video"></button>
+                    <button class="button" id="avanzar" aria-label="avanzar 10 segundos" title="avanzar 10 segundos"></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" min="0" value="0" step="1">
+                </div>                  
+            </div>
+          
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
